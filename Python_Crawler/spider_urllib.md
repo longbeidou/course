@@ -1,6 +1,6 @@
-# 通过urllib实现爬虫
+# 通过urllib实现发送HTTP请求的功能
 
-> 通过urllib实现百度网页搜索结果的抓取
+> 通过urllib实现好搜网页搜索结果的抓取
 
 ```python
 import urllib.request
@@ -65,3 +65,27 @@ with open('admin_page.html', 'wb') as f:
 print(content_response)
 ```
 
+> 处理异常
+
+```python
+import urllib.request
+from urllib.error import URLError, HTTPError, ContentTooShortError
+
+url = 'http://www.baidu666.com/'
+
+try:
+    response = urllib.request.urlopen(url, timeout=5)
+    print(response.geturl())
+    print(response.info())
+    print(response.getcode())
+except AttributeError as e:
+    print('AttributeError', e)
+except ContentTooShortError as e:
+    print('ContentTooShortError', e)
+except HTTPError as e:
+    print('HTTP Error:', e)
+except URLError as e:
+    print('URL Error:', e)
+finally:
+    print('This is final')
+```
