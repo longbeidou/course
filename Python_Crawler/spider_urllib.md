@@ -1,6 +1,6 @@
 # 通过urllib实现发送HTTP请求的功能
 
-> 通过urllib实现好搜网页搜索结果的抓取
+## 通过urllib实现好搜网页搜索结果的抓取
 
 ```python
 import urllib.request
@@ -20,7 +20,7 @@ with open('so_result.html', 'w', encoding='utf-8') as f:
     f.write(so_content)
 ```
 
-> 通过cookie实现自动登录
+## 通过cookie实现自动登录
 
 ```python
 import urllib.request
@@ -65,7 +65,7 @@ with open('admin_page.html', 'wb') as f:
 print(content_response)
 ```
 
-> 处理异常
+## 处理异常
 
 ```python
 import urllib.request

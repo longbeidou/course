@@ -1,12 +1,14 @@
 # 数据存储之csv
 
-> 使用方法
+[TOC]
+
+## 使用方法
 
 * writer(fp)
 * writerow()    写入一行
 * writerows()  写入多行
 
-> 基础使用方法
+## 基础使用方法
 
 ```python
 import csv

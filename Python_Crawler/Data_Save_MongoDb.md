@@ -1,28 +1,35 @@
 # 数据存储之MongoDb
 
-> 端口号
+[TOC]
+
+## 端口号
 
 ​	27017
 
-> 启动数据库
+## 启动数据库
 
-* 启动服务端
-  * mongod
-  * service mongodb start
-  * service mongodb stop
-* 启动客户端
-  * mongo
-* 设置权限
-  * mongod -auth
-    * use admin
-  * 查看所有用户
-    * show users
-  * 创建用户
-    * db.createUser({user: "user_name", pwd: "your_pwd", roles: ["root"]})
-  * 删除用户
-    * db.dropUser('user_name')
+### 启动服务端
 
-> 数据库的操作
+* mongod
+* service mongodb start
+* service mongodb stop
+
+### 启动客户端
+
+* mongo
+
+### 设置权限
+
+* mongod -auth
+  * use admin
+* 查看所有用户
+  * show users
+* 创建用户
+  * db.createUser({user: "user_name", pwd: "your_pwd", roles: ["root"]})
+* 删除用户
+  * db.dropUser('user_name')
+
+## 数据库的操作
 
 * 查看所有数据库
   * show dbs
@@ -34,7 +41,7 @@
   * user db_name
   * db.dropDatabase()
 
-> 集合的操作
+## 集合的操作
 
 * 查看所有集合
   * show collections
@@ -44,7 +51,7 @@
 * 删除集合
   * db.collection_name.drop()
 
-> 文档内容操作
+## 文档内容操作
 
 * 增加
   * db.collection_name.insert()
@@ -104,7 +111,7 @@
     * distinct
       * db.collection.distinct('filed_name', {条件})
 
-> 索引查询
+## 索引查询
 
 * 查看所有索引
   * getIndexes()
@@ -116,7 +123,7 @@
   * 删除索引
     * dropIndex("name_1")
 
-> 备份和恢复
+## 备份和恢复
 
 * mongodump备份数据库
 
@@ -188,7 +195,7 @@
 
       --type：导入的文件类型（默认json）
 
-> 与Python的交互
+## 与Python的交互
 
 * 安装pymongo
 
@@ -225,7 +232,7 @@
   * find
   * find_one
 
-> 控制台Code
+## 控制台Code
 
 ```bash
 db.stu.find({
@@ -257,7 +264,7 @@ db.data.ensureIndex({user: 1})
 db.data.dropIndex('user_1')
 ```
 
-> 与Python交互的Code
+## 与Python交互的Code
 
 ```python
 import pymongo

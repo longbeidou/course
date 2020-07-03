@@ -1,10 +1,12 @@
 # 数据解析之Xpath
 
-> 安装 `lxml` 库
+[TOC]
+
+## 安装 `lxml` 库
 
 `pip install lxml`
 
-> Xpath语法
+## Xpath语法
 
 - 根节点：`/`
 - 跨节点：`//`
@@ -12,7 +14,7 @@
 - 获取标签里的内容: `text()`
 - 获取标签的属性：`@attr_name` eg: `@href`
 
-> 通过Xpath获取360搜索的相关信息
+## 通过Xpath获取360搜索的相关信息
 
 ```python
 import re, requests

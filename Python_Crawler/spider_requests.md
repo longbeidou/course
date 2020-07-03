@@ -1,14 +1,14 @@
 # 通过第三方的requests实现发送HTTP请求的功能
 
-> 安装requests
+## 安装requests
 
 `pip install requests`
 
-> requests 地址
+## requests 地址
 
-[点击直达](https://requests.readthedocs.io/en/latest/)
+[https://requests.readthedocs.io/en/latest/](https://requests.readthedocs.io/en/latest/)
 
-> 通过requests发送get请求
+## 通过requests发送get请求
 
 ```python
 import requests
@@ -39,7 +39,7 @@ print(response_code)
 print(response_cookie)
 ```
 
-> 通过requests发送post请求
+## 通过requests发送post请求
 
 ```python
 import requests
@@ -52,7 +52,7 @@ print(response.request.body)
 print(response.request.url)
 ```
 
-> 通过requests获取返回的json内容
+## 通过requests获取返回的json内容
 
 ```python
 import requests
@@ -66,7 +66,7 @@ json_data = response.json()
 print(json_data)
 ```
 
-> 通过免费的IP代理来实现HTTP请求
+## 通过免费的IP代理来实现HTTP请求
 
 ```python
 import requests
@@ -81,7 +81,7 @@ response = requests.get(url, headers=header, proxies=free_proxy)
 print(response.status_code)
 ```
 
-> 忽略SSL证书
+## 忽略SSL证书
 
 设置verify为False，表示不是CA证书，是自己颁发的证书
 
@@ -94,7 +94,7 @@ response = requests.get(url, headers=header, verify=False)
 print(response.content.decode())
 ```
 
-> 通过Cookie实现自动登录
+## 通过Cookie实现自动登录
 
 ```python
 import requests

@@ -1,20 +1,22 @@
 # 数据解析之Beautiful Soup
 
-> 文档地址
+[TOC]
+
+## 文档地址
 
 [https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/](https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/)
 
-> 安装 Beautiful Soup 4
+## 安装 Beautiful Soup 4
 
 `pip install beautifulsoup4`
 
-> 安装解析器
+## 安装解析器
 
 `pip install lxml`
 
 `pip install html5lib`
 
-> 解析器对比
+## 解析器对比
 
 | 解析器           | 使用方法                                                     | 优势                                                  | 劣势                                            |
 | ---------------- | ------------------------------------------------------------ | ----------------------------------------------------- | ----------------------------------------------- |
@@ -23,14 +25,14 @@
 | lxml XML 解析器  | `BeautifulSoup(markup, ["lxml-xml"])`  <br />`BeautifulSoup(markup, "xml")` | 速度快唯一支持XML的解析器                             | 需要安装C语言库                                 |
 | html5lib         | `BeautifulSoup(markup, "html5lib")`                          | 最好的容错性以浏览器的方式解析文档生成HTML5格式的文档 | 速度慢不依赖外部扩展                            |
 
-> 对象的种类
+## 对象的种类
 
 * Tag：与XML或HTML原生文档中的tag相同
 * NavigableString：Tag中的字符串内容形式
 * BeautifulSoup：一个文档的全部内容
 * Comment：一个特殊类型的 `NavigableString` 对象，文档中的备注类型，其输出的内容不包括注释符号。
 
-> 遍历文档树
+## 遍历文档树
 
 * 子节点
 
@@ -64,7 +66,7 @@
 
   .stripped_strings	当前标签下面的所有字符串（去除空格和空行）的遍历对象
 
-> 搜索文档树
+## 搜索文档树
 
 * find()与find_all()的区别
 
@@ -88,7 +90,7 @@
 
 * select() // CSS选择器
 
-> 使用案例
+## 使用案例
 
 ```python
 from bs4 import BeautifulSoup
