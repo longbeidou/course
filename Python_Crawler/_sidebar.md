@@ -6,6 +6,7 @@
 * [数据解析之Beautiful Soup](/Python_Crawler/Data_Parse_BeautifulSoup)
 * [数据存储之json](/Python_Crawler/Data_Save_Json)
 * [数据存储之MongoDb](/Python_Crawler/Data_Save_MongoDb)
+* [数据存储之Redis](/Python_Crawler/Data_Save_Redis)
 
 
 
