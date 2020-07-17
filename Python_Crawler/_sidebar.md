@@ -8,6 +8,8 @@
 * [数据存储之MongoDb](/Python_Crawler/Data_Save_MongoDb)
 * [数据存储之Redis](/Python_Crawler/Data_Save_Redis)
 * [数据存储之MySQL](/Python_Crawler/Data_Save_MySQL)
+* [Selenium文档 ](/Python_Crawler/Selenium_Document )
+* [Selenium使用案例 ](/Python_Crawler/Selenium_Case )
 
 
 
